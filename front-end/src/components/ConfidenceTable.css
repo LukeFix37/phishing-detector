@@ -1,0 +1,63 @@
+/* ConfidenceTable.css */
+
+/* Detached card style */
+.confidence-table-container {
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* or adjust as needed */
+}
+
+/* Heading inside the confidence table */
+.confidence-table-container h2 {
+  color: #00d8ff;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #00d8ff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Table full width */
+.confidence-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+/* Table header styling */
+.confidence-table-container th,
+.confidence-table-container td {
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid #335577;
+}
+
+/* Header row */
+.confidence-table-container th {
+  background-color: #004a88;
+  color: #a0cfff;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+.confidence-table-container tbody tr:nth-child(even) {
+  background-color: rgba(10, 25, 55, 0.5);
+}
+
+/* Responsive smaller font on small screens */
+@media (max-width: 500px) {
+  .confidence-table-container {
+    max-width: 100%;
+    margin: 2rem 1rem;
+    padding: 1.5rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
