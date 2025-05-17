@@ -8,7 +8,7 @@ function UrlChecker() {
 
   const handleCheck = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/check-url", {
+      const response = await axios.post("https://phishing-detector-u0on.onrender.com/check-url", {
         url,
       });
       setResult(response.data);

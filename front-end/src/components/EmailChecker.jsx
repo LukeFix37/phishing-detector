@@ -8,7 +8,7 @@ function EmailChecker() {
 
   const handleCheck = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/check-email", {
+      const response = await axios.post("https://phishing-detector-u0on.onrender.com/check-email", {
         emailText,
       });
       setResult(response.data);
