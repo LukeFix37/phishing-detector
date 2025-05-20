@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import UrlChecker from "./components/UrlChecker";
 import EmailChecker from "./components/EmailChecker";
 import ConfidenceTable from "./components/ConfidenceTable";
-import "./styles.css"; 
+import { Analytics } from "@vercel/analytics/react"; 
+import "./styles.css";
 
 function App() {
   const sampleData = [
@@ -54,6 +55,7 @@ function App() {
             <ConfidenceTable data={sampleData} />
           </div>
         </div>
+        <Analytics />
       </div>
     </BrowserRouter>
   );
