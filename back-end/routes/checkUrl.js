@@ -1,4 +1,7 @@
 // Enhanced phishing detection for URLs
+
+const router = express.Router();
+
 router.post('/', (req, res) => {
 const { url } = req.body;
 if (!url) return res.status(400).json({ error: 'URL is required' });

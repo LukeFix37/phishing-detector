@@ -1,4 +1,7 @@
 // Enhanced phishing detection for emails
+
+const router = express.Router();
+
 router.post('/', (req, res) => {
 const { emailText } = req.body;
 if (!emailText) return res.status(400).json({ error: 'Email text is required' });
