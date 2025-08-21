@@ -94,20 +94,20 @@ maxScore += 20; // Max points for keywords
 let keywordRisk = 0;
 
 const phishingKeywords = [
-  { keyword: 'login', weight: 3 },
+  { keyword: 'login', weight: 1 },
   { keyword: 'secure', weight: 3 },
   { keyword: 'update', weight: 4 },
   { keyword: 'verify', weight: 4 },
   { keyword: 'account', weight: 3 },
   { keyword: 'banking', weight: 5 },
-  { keyword: 'paypal', weight: 4 },
-  { keyword: 'amazon', weight: 4 },
-  { keyword: 'microsoft', weight: 4 },
-  { keyword: 'apple', weight: 4 },
+  { keyword: 'paypal', weight: 1 },
+  { keyword: 'amazon', weight: 1 },
+  { keyword: 'microsoft', weight: 1 },
+  { keyword: 'apple', weight: 1 },
   { keyword: 'security', weight: 3 },
   { keyword: 'suspended', weight: 5 },
   { keyword: 'confirm', weight: 4 },
-  { keyword: 'urgent', weight: 4 },
+  { keyword: 'urgent', weight: 5 },
   { keyword: 'expired', weight: 4 }
 ];
 
