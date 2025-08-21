@@ -1,4 +1,5 @@
 // Enhanced phishing detection for URLs
+import express from 'express';
 
 const router = express.Router();
 
@@ -233,4 +234,5 @@ isPhishing: confidence >= 50,
 ...(debugInfo && { debug: debugInfo })
 });
 });
+
 export default router;
